@@ -67,7 +67,7 @@ Wo et al. [[3]] have described this kind of system as “taxation by citation”
 
 {% include revenue.html %}
 
-<p style="padding:10px;font-size: 14px">Figure 5 - Total revenue by neighborhood since 2022. By hovering each chart you can see the amount</p>
+<p style="padding:10px;font-size: 14px">Figure 5 - Total citation revenue by neighborhood (Top 10, since 2022). Hover over each bar to see the exact revenue amount.</p>
 
 
 ## Conclusion
