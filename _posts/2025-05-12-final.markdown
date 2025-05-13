@@ -82,3 +82,8 @@ Parking violations happen for different reasons in different parts of the city. 
 [1]: https://www.sfchronicle.com/sf/article/san-francisco-neighborhood-data-map-19990995.php
 [2]: https://www.sciencedirect.com/science/article/pii/S0264275124004438
 [3]: https://www.tandfonline.com/doi/abs/10.1080/07352166.2023.2239956
+
+
+# Jupyter Notebook
+
+{% include final_assignment.html %}
