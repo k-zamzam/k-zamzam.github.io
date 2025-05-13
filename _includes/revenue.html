@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.6.2.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="ac192e8d-8712-4bf6-9a58-d2106c8359f2" data-root-id="p1560" style="display: contents;"></div>
+  
+    <script type="application/json" id="dabe5b0f-c5d4-44c7-a56e-245cbc11e68d">
+      {"2711c0a7-ee0d-4d87-9111-f4e54ef54110":{"version":"3.6.2","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1560","attributes":{"width":800,"height":400,"x_range":{"type":"object","name":"FactorRange","id":"p1570","attributes":{"factors":["Mission","Financial District/South Beach","Tenderloin","Marina","South of Market","Pacific Heights","Sunset/Parkside","Hayes Valley","Nob Hill","Western Addition"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1562","attributes":{"start":0}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1571"},"y_scale":{"type":"object","name":"LinearScale","id":"p1572"},"title":{"type":"object","name":"Title","id":"p1563","attributes":{"text":"Total Citation Revenue by Neighborhood (Top 10, Since 2022)"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1589","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1557","attributes":{"selected":{"type":"object","name":"Selection","id":"p1558","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1559"},"data":{"type":"map","entries":[["neighborhood",["Mission","Financial District/South Beach","Tenderloin","Marina","South of Market","Pacific Heights","Sunset/Parkside","Hayes Valley","Nob Hill","Western Addition"]],["revenue",{"type":"ndarray","array":{"type":"bytes","data":"qXxcAomn9QEEYlABsYcRAduk+QC9WM0AiTTKAHTUyAAAs8MA42G0AA=="},"shape":[10],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1590","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1591"}}},"glyph":{"type":"object","name":"VBar","id":"p1586","attributes":{"x":{"type":"field","field":"neighborhood"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"revenue"},"line_color":{"type":"value","value":"#ff8c00"},"fill_color":{"type":"value","value":"#ff8c00"},"hatch_color":{"type":"value","value":"#ff8c00"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1587","attributes":{"x":{"type":"field","field":"neighborhood"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"revenue"},"line_color":{"type":"value","value":"#ff8c00"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#ff8c00"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"#ff8c00"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1588","attributes":{"x":{"type":"field","field":"neighborhood"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"revenue"},"line_color":{"type":"value","value":"#ff8c00"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#ff8c00"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"#ff8c00"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1569","attributes":{"tools":[{"type":"object","name":"HoverTool","id":"p1593","attributes":{"renderers":"auto","tooltips":[["Neighborhood","@neighborhood"],["Revenue","@revenue{$0,0}"]]}}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p1578","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1579","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"NumeralTickFormatter","id":"p1592","attributes":{"format":"$0,0"}},"axis_label":"Total Revenue ($)","major_label_policy":{"type":"object","name":"AllLabels","id":"p1581"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1573","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1574"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1575"},"axis_label":"Neighborhood","major_label_orientation":1.2,"major_label_policy":{"type":"object","name":"AllLabels","id":"p1576"}}}],"center":[{"type":"object","name":"Grid","id":"p1577","attributes":{"axis":{"id":"p1573"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p1582","attributes":{"dimension":1,"axis":{"id":"p1578"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('dabe5b0f-c5d4-44c7-a56e-245cbc11e68d').textContent;
+              const render_items = [{"docid":"2711c0a7-ee0d-4d87-9111-f4e54ef54110","roots":{"p1560":"ac192e8d-8712-4bf6-9a58-d2106c8359f2"},"root_ids":["p1560"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
